@@ -1,4 +1,6 @@
-# My-Unix-Commands
+# My-Linux-Commands
+
+This is a repository which summarizes What I learned from [this course (Linux A-Z) on Udemy](https://www.udemy.com/course/linux-egitimi/).
 
 ## General Commands
 
