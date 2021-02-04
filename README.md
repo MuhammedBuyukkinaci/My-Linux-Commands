@@ -202,7 +202,7 @@ ls path_of_folder
 
 1) You can check out 
 
-![Linux Architecture](https://github.com/MuhammedBuyukkinaci/My-Unix-Commands/blob/master/img/linux_architecture.png)
+![Linux Architecture](https://github.com/MuhammedBuyukkinaci/My-Linux-Commands/blob/master/img/linux_architecture.png)
 
 2) /etc is a directory having configuration files.
 
