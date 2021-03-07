@@ -108,7 +108,7 @@ export EV_NAME="EV_VALUE"
 sed 's/unix/linux/g' geekfile.txt
 ```
 
-## Python Environments
+## Python Environments - Virtualenv
 
 1) Python environments are used to isolate installed packages from each other.
 
@@ -132,7 +132,58 @@ pip install NEW_PACKAGE_TO_INSTALL
 
 # To put all installed packages in a requirements.txt file
 pip freeze > requirements.txt
+
+# To deactivate an activated environment
+deactivate
+
  ```
+
+ ## Conda
+
+1) Conda effectively combines the functionality of pip and virtualenv in a single package (from SOF). Conda is a python manager and an environment manager.
+
+* install package with conda install flake8
+* create an environment with any version of Python with conda create -n myenv python=3.6
+
+2) Miniconda installer = Python + conda. Use convenient [miniconda](https://repo.anaconda.com/miniconda/) if you have some kind of experience in Python.
+
+3) Anaconda installer = Python + conda + meta package anaconda. Use anaconda if you are new to Python.
+
+4) Some widely used commands are here
+
+```
+
+# To create a virtual environment named ENV_NAME with python 3.5
+conda create --name ENV_NAME python=3.7
+
+# To remove a virtual environment
+conda remove --name ENV_NAME --all
+
+# To list all virtual environments
+conda info -e
+
+# To activate a virtual environment
+conda activate ENV_NAME
+
+# To deactivate a virtual environment (when the virtual environment is active)
+conda deactivate
+
+# To list all installed packages in current virtual environment:
+conda list
+
+# To install a package in a virtual environment
+conda install flask
+
+# To remove a package from a virtual environment
+conda remove flask
+
+# To export all installed packages into a yaml file without a prefix section in yaml file (when the virtual environment is active) 
+conda env export | grep -v "^prefix: " > environment.yml
+
+# To create a new virtual environment from a yaml file(its name and python version is in environment.yml file)
+conda env create -f environment.yml
+
+```
 
 ## Virtualization
 
