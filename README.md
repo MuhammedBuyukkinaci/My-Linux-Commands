@@ -108,6 +108,31 @@ export EV_NAME="EV_VALUE"
 sed 's/unix/linux/g' geekfile.txt
 ```
 
+## Python Environments
+
+1) Python environments are used to isolate installed packages from each other.
+
+2) To install virtualenv, create an example virtualenv, activate a virtualenv, install libraries from a requirements.txt file; run the following
+
+ ```
+# to install virtualenv
+sudo pip3 install virtualenv
+
+# create an example virtualenv
+virtualenv ENV_NAME
+
+# activate a virtualenv
+source ENV_NAME/bin/activate
+
+# install libraries from a requirements.txt file
+pip install -r requirements.txt
+
+# install a new library except libraries in requirements.txt
+pip install NEW_PACKAGE_TO_INSTALL
+
+# To put all installed packages in a requirements.txt file
+pip freeze > requirements.txt
+ ```
 
 ## Virtualization
 
