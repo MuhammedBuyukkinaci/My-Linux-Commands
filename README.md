@@ -108,6 +108,16 @@ export EV_NAME="EV_VALUE"
 sed 's/unix/linux/g' geekfile.txt
 ```
 
+15) To find a string in all subfolders of a directory(requires permission for the user)
+
+```shell
+grep -rl "URL" ./main
+```
+
+![Find a string](https://github.com/MuhammedBuyukkinaci/My-Linux-Commands/blob/master/img/find_a_string.png)
+
+16) scp (secure copy) is a command to transfer files from remote to local or vice versa.
+
 ## Python Environments - Virtualenv
 
 1) Python environments are used to isolate installed packages from each other.
