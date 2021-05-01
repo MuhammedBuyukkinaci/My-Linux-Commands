@@ -114,7 +114,7 @@ sed 's/unix/linux/g' geekfile.txt
 grep -rl "URL" ./main
 ```
 
-![Find a string](https://github.com/MuhammedBuyukkinaci/My-Linux-Commands/blob/master/img/find_a_string.png)
+![Find a string](img/01_find_a_string.png)
 
 16) scp (secure copy) is a command to transfer files from remote to local or vice versa.
 
@@ -313,6 +313,8 @@ CREATE SCHEMA MYSCHEMA
 CREATE ROLE ROLE_NAME
 ```
 
+![Find a string](img/03_Postgresql_Skeleton.png)
+
 ## Virtualization
 
 1) Download virtualbox to install a virtual ubuntu environment.
@@ -406,7 +408,7 @@ ls path_of_folder
 
 1) You can check out 
 
-![Linux Architecture](https://github.com/MuhammedBuyukkinaci/My-Linux-Commands/blob/master/img/linux_architecture.png)
+![Linux Architecture](img/02_linux_architecture.png)
 
 2) /etc is a directory having configuration files.
 
