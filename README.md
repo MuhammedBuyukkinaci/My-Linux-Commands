@@ -237,6 +237,22 @@ ssh root@165.22.24.206
 ```
 
 
+## Public & Private IP
+
+1) In short, your router creates a small network between the computers in your home, while your modem connects that network and thus the computers on it to the internet. The router offers some protection to your devices over being exposed directly to the Internet.  To the Internet, all the traffic coming from your house looks like it’s coming from a single device. Modem is the device that you plugged router into.
+
+2) Since the modem communicates with your Internet service provider, you’ll need the correct type of modem that will work with your ISP’s infrastructure.
+
+3) Some ISPs offer a modem and router in a single device. That device has the electronics and software in it to provide both functions, acting as a modem that communicates with your ISP and functioning as a router to create a home network.
+
+4) In a typical home network, a router has a public IP address on the Internet. The computers, smartphones, game consoles, and other devices behind the router each have a unique private IP address on the home network.
+
+5)  The router acts as an intermediary, forwarding traffic to the local IP addresses that request it. From an outside perspective, all devices on the home network are communicating with the Internet from a single public IP address.
+
+
+( from [howtogeek](https://www.howtogeek.com/234233/whats-the-difference-between-a-modem-and-a-router/) )
+
+
 ## Virtualization
 
 1) Download virtualbox to install a virtual ubuntu environment.
