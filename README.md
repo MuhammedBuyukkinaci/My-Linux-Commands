@@ -253,6 +253,66 @@ ssh root@165.22.24.206
 ( from [howtogeek](https://www.howtogeek.com/234233/whats-the-difference-between-a-modem-and-a-router/) )
 
 
+## PostgreSQL
+
+1) To move *postgres* user on Terminal
+
+```
+sudo su - postgres
+```
+
+2) *postgres* is a database superuser. After moving to postgres user via the command above, run psql command on the Terminal to run SQL queries. Then, run ```SELECT VERSION();``` to learn which PostgreSQL version is installed.
+
+```
+psql
+```
+
+3) PostgreSQL components are:
+    - PostgreSQL Server; to install the PostgreSQL database server 
+    - pgAdmin4 ; to install the PostgreSQL database GUI management tool
+    - Command Line Tools such as psql, pg_restore; to interact via a CLI
+    - Stack Builder; to install drivers
+
+4) pgAdmin4 & psql can be thought as a client and PostgreSQL Server can be thought as a server.
+
+5) Database server is a computer software, which is used to backup the program and data of other computers or just computer programs. It is also known as client server model.
+
+6) PostgreSQL enables us to grant permissions to users but this isn't recommended.
+
+7) In oracle, User = Role + Login Permission
+
+8) In PostgreSQL, users = groups = roles
+
+9) To create a PostgreSQL user
+
+```psql
+CREATE USER myuser IWTH PASSWORD 'PAROLA';
+```
+
+10) New Permissions inherift permisssions from the public role.
+
+11) When a DB is created, a schema named public is created too. Also, a role named public is created.
+
+12) When a users created a table without specifying the schema name, it was created under public
+
+13) To create a database on psql
+
+```
+CREATE DATABASE DATABASE_NAME
+```
+
+14) To create a schema
+
+```
+CREATE SCHEMA MYSCHEMA
+```
+
+15) To create a role
+
+```
+CREATE ROLE ROLE_NAME
+```
+
 ## Virtualization
 
 1) Download virtualbox to install a virtual ubuntu environment.
