@@ -195,6 +195,48 @@ conda env create -f environment.yml
 
 ```
 
+## SSH
+
+1) SSH is a protocol which enables us to connect to a remote machine from our local machine via a text-based interface. To establish a SSH connection, 2 components are needed: a client and the server-side component.(Summary from [here](https://phoenixnap.com/kb/ssh-to-connect-to-remote-server-linux-or-windows))
+
+2) SSH Client is a software we install on our compuyer which enables aus to connect to a remote machine. PuTTY is an SSH client. For many linux distros, an SSH clients comes with themselves by default. If an *SSH client* isn't installed on the system, install it via:
+
+```shell
+sudo apt-get install openssh-client
+```
+
+3) On server side, a component named as SSH Daemon is required. When the client tries to connect to a remote machine, SSH daemon will respond it. You can install *OpenSSH server* so as to accept SSH connections on the remote machine.
+
+```shell
+sudo apt-get install openssh-server ii.
+```
+
+4) To check SSH status on server side
+
+```shell
+sudo service ssh status
+```
+
+5) To take a look at ssh settings in client-side
+
+```shell
+cat /etc/ssh/ssh_config
+```
+
+6) SSH uses TCP port 22 by defualt. To update ssh configurations on server side(*d* letter of *sshd_config* refers to daemon probably)
+
+```shell
+sudo vi /etc/ssh/sshd_config
+```
+
+7) To connect a remote server from a loca computer via SSH:
+
+```shell
+ssh your_username@host_ip_address
+ssh root@165.22.24.206
+```
+
+
 ## Virtualization
 
 1) Download virtualbox to install a virtual ubuntu environment.
