@@ -114,6 +114,19 @@ sed 's/unix/linux/g' geekfile.txt
 grep -rl "URL" ./main
 ```
 
+16) To check the status of NVME SSD
+
+```
+sudo apt install nvme-cli
+sudo nvme smart-log /dev/nvme0
+```
+
+17) To convert an image 90 degree in clockwise(convert must be installed before)
+
+```
+convert infile.png -rotate 90 /out/directory/is/here/outfile.png ;
+```
+
 ![Find a string](img/01_find_a_string.png)
 
 16) scp (secure copy) is a command to transfer files from remote to local or vice versa.
@@ -314,6 +327,24 @@ CREATE ROLE ROLE_NAME
 ```
 
 ![Find a string](img/03_Postgresql_Skeleton.png)
+
+# Make a bootable Windows USB in Ubuntu
+
+1) Download iso file from Microsoft's official web page.
+
+2) Open up Disks
+
+3) Format USB to MBR or GPT (doesn't matter) via clicking 3 dots.
+
+4) Format partition of USB to FAT32
+
+5) Run the following linux command. Change it to proper names if needed. **/dev/sda1** is the directory of where USB is located. **/home/muhammed/Downloads/Win10_21H1_Turkish_x64.iso** is where iso file located.
+
+```
+sudo dd bs=4M if=/home/muhammed/Downloads/Win10_21H1_Turkish_x64.iso of=/dev/sda1 conv=fdatasync  status=progress
+```
+
+6) To safely remove the USB, open up Disks and unmount the partition/disk.
 
 ## Virtualization
 
