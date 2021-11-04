@@ -1082,7 +1082,22 @@ systemctl status gdm3.service
 
 13) Openbox is a window manager. It has no desktop. 
 
+## Others
 
+1) To create a user in linux(must be logged in root)
+
+```
+adduser USER_NAME_TO_ADD
+```
+
+2)Give that user sudo privileges
+
+```
+
+usermod -aG GROUP_NAME_TO_BE_ADDED USER_NAME_TO_ADD
+
+usermod -aG sudo USER_NAME_TO_ADD
+```
 
 
 
