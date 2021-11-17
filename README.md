@@ -326,7 +326,36 @@ CREATE SCHEMA MYSCHEMA
 CREATE ROLE ROLE_NAME
 ```
 
+16) Postgres is set up to use ident authentication, meaning that it associates Postgres roles with a matching Unix/Linux system account. If a role exists within Postgres, a Unix/Linux username with the same name is able to sign in as that role
+
+[from digital ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
+
 ![Find a string](img/03_Postgresql_Skeleton.png)
+
+17) Postgresql user is ready to connect to a database whose name is the same as postgresql user name. Some commonly used psql commands are below 
+
+```
+# To see connection info
+\conninfo
+# To quit psql
+\q
+# To list databases
+\l
+# To list tables and their serials of a connected database
+\d
+# To list only tables of a connected database
+\dt
+# To list only serials of a connected database
+\ds
+# To list all postgresql users with extra info
+\du+
+# To list all postgresql users without extra info
+\du
+
+
+
+```
+
 
 # Make a bootable Windows USB in Ubuntu
 
