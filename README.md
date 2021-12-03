@@ -161,6 +161,22 @@ deactivate
 
  ```
 
+ ## venv
+
+ 1) venv is Python3's recommended environment manager.
+
+ 2) To install a venv environment
+
+ ```
+python3 -m venv ./ENV_NAME_TO_USE/
+ ``` 
+
+ 3) To activate the created environment
+
+ ```
+source ENV_NAME_TO_USE/bin/activate
+ ```
+
  ## Conda
 
 1) Conda effectively combines the functionality of pip and virtualenv in a single package (from SOF). Conda is a python manager and an environment manager.
@@ -351,7 +367,8 @@ CREATE ROLE ROLE_NAME
 \du+
 # To list all postgresql users without extra info
 \du
-
+# To connect a database
+\c DATABASE_NAME_TO_CONNECT
 
 
 ```
@@ -1128,6 +1145,11 @@ usermod -aG GROUP_NAME_TO_BE_ADDED USER_NAME_TO_ADD
 usermod -aG sudo USER_NAME_TO_ADD
 ```
 
+3) To follow sh script in DEBUG mode to catch where the error occurs
+
+```
+set -x
+```
 
 
 
