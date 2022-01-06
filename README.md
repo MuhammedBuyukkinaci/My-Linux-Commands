@@ -1151,7 +1151,11 @@ usermod -aG sudo USER_NAME_TO_ADD
 set -x
 ```
 
+4) To list which ports are listeing on a Unix-like OS
 
+```
+sudo netstat -tunlp
+```
 
 
 
