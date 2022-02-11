@@ -1157,13 +1157,33 @@ set -x
 sudo netstat -tunlp
 ```
 
+5) */etc/apt/source.list* is a configuration file for Linux's Advance Packaging Tool, that holds URLs and other information for remote repositories from where software packages and applications are installed -- from [here](https://dev.to/bijaykumarpun/what-s-inside-etc-apt-sources-list-2h1k)
 
+6) To display IP configuration of the machine,
 
+```
+ifconfig -a
+```
 
+7) `id` is a command to show info about user. The below code shows details about user muhammed and group muhammed.
 
+```
+id muhammed
+```
 
+8) ln is a command in Linux to make links between files. Two types are symbolic or hard links. Generally, soft link is used. Soft link (aka symbolic link) is similar to windows shortcuts.
 
+```
+# Soft link
 
+# Soft link
+ln -s {source-filename} {symbolic-filename}
+# Example
+ln -s file1 link1
+# Directory mapping is also possible.
+ln -s /source/directory/here/ /sot(link/directory/here/
+
+```
 
 
 
