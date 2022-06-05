@@ -131,6 +131,86 @@ convert infile.png -rotate 90 /out/directory/is/here/outfile.png ;
 
 16) scp (secure copy) is a command to transfer files from remote to local or vice versa.
 
+17) To change editor to Nano or Vim
+
+```
+export EDITOR=/usr/bin/vim.tiny
+```
+
+## Crontab
+
+1) To list cron jobs
+
+```
+crontab -l
+```
+
+2) To create a cron job
+
+```
+crontab -e
+```
+
+3) Cronjob configuration is below
+
+```
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday;
+# │ │ │ │ │                                       7 is also Sunday on some systems)
+# │ │ │ │ │
+# │ │ │ │ │
+# * * * * *  command_to_execute
+```
+
+4) To run a job in 30th minute of every hour
+
+```
+30 * * * * echo 'Hello' >> temp.txt
+```
+
+5) To run a job on 1st and 15th day of month
+
+```
+0 0 1,15 * * echo 'Hello' >> temp.txt
+```
+
+6) To run a command on 10 and its relevant folds minutes(10-20-30-40-50)
+
+```
+*/10 * * * * echo 'Hello' >> temp.txt
+```
+
+7) To run a command between every hour of 0 and 5
+
+```
+0 0-5 * * * echo 'Hello' >> temp.txt
+```
+
+8) To edit another user's cron jobs
+
+```
+crontab -u user2 -e
+```
+
+9) To list and edit root user's cron jobs
+
+```runall.sh
+sudo crontab -l
+sudo crontab -e
+```
+
+10) To remove cron jobs 
+
+```
+crontab -r
+```
+
+11) [crontab.guru](https://crontab.guru/) is a website to translate time to cron expressions.
+
+
 ## Python Environments - Virtualenv
 
 1) Python environments are used to isolate installed packages from each other.
@@ -168,7 +248,9 @@ deactivate
  2) To install a venv environment
 
  ```
+python3 -m venv ENV_NAME_TO_USE
 python3 -m venv ./ENV_NAME_TO_USE/
+
  ``` 
 
  3) To activate the created environment
