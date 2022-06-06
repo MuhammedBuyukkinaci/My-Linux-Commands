@@ -246,18 +246,23 @@ deactivate
 
  1) venv is Python3's recommended environment manager.
 
- 2) To install a venv environment
+ 2) Some widely used command
 
- ```
+ ```runall.sh
+#To install a venv environment
 python3 -m venv ENV_NAME_TO_USE
 python3 -m venv ./ENV_NAME_TO_USE/
+python3 -m venv venv
 
- ``` 
-
- 3) To activate the created environment
-
- ```
+#To activate the created environment
 source ENV_NAME_TO_USE/bin/activate
+
+#To put all installed packages in a requirements.txt file
+pip freeze > requirements.txt
+
+#To put packages only in environment(excluding global packages)
+pip freeze --local > requirements.txt
+
  ```
 
  ## Conda
