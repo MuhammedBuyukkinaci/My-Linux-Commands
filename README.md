@@ -88,7 +88,7 @@ cat abc.txt && echo "abc.txt file found"
 cat def.txt && echo "abc.txt file not found"
 ```
 
-13)To list EV's in Linux, run ```env``` command. To see the value of an EV we want to see, run ```echo $NAME_OF_EV``` like ```echo $PATH ```. To create an EV ```export EV_NAME="EV_VALUE" ```
+13)To list EV's in Linux, run ```env``` command. To see the value of an EV we want to see, run ```echo $NAME_OF_EV``` like ```echo $PATH ```. To create an EV ```export EV_NAME="EV_VALUE" ``. Environment variables aren't stored in some file, but they exist at the runtime of a process.
 
 ```
 # to print all EV's
@@ -100,6 +100,7 @@ echo $HOSTNAME
 
 #To create a specific EV
 export EV_NAME="EV_VALUE"
+
 ```
 
 14) Find and replace operation is carried out with sed command
