@@ -254,6 +254,9 @@ python3 -m venv ENV_NAME_TO_USE
 python3 -m venv ./ENV_NAME_TO_USE/
 python3 -m venv venv
 
+# install libraries from a requirements.txt file
+pip install -r requirements.txt
+
 #To activate the created environment
 source ENV_NAME_TO_USE/bin/activate
 
@@ -263,6 +266,8 @@ pip freeze > requirements.txt
 #To put packages only in environment(excluding global packages)
 pip freeze --local > requirements.txt
 
+# To install an environment from packages of global python environment
+python3 -m venv venv --system-site-packages
  ```
 
  ## Conda
