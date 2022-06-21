@@ -112,7 +112,10 @@ sed 's/unix/linux/g' geekfile.txt
 15) To find a string in all subfolders of a directory(requires permission for the user)
 
 ```shell
+#Searching URL in all files under main
 grep -rl "URL" ./main
+# show line numbers of venv in .gitignore file
+grep -n venv .gitignore
 ```
 
 16) To check the status of NVME SSD
