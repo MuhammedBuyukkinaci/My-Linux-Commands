@@ -131,6 +131,12 @@ sudo nvme smart-log /dev/nvme0
 convert infile.png -rotate 90 /out/directory/is/here/outfile.png ;
 ```
 
+18) To scan all paths in the computer and put them in a folder named temp; install clamscan and run the following on Terminal
+
+```
+sudo clamscan -r --move=/home/muhammed/Desktop/temp /
+```
+
 ![Find a string](img/01_find_a_string.png)
 
 16) scp (secure copy) is a command to transfer files from remote to local or vice versa.
