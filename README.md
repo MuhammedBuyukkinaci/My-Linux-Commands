@@ -166,6 +166,7 @@ alias gbm='git branch -m'
 alias gsa='git status'
 alias gss='git status -s'
 alias grv='git remote -v'
+alias ll='ls -altr'
 ```
 
 ## Crontab
