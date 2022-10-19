@@ -147,7 +147,7 @@ sudo clamscan -r --move=/home/muhammed/Desktop/temp /
 export EDITOR=/usr/bin/vim.tiny
 ```
 
-21) Some shortcuts for terminal. Add it to **~/.bashrc** or **~/.zshrc** .
+21) Some shortcuts for terminal. Add it to **~/.bashrc** or **~/.zshrc** . After appending these commands, run `source ~/.bashrc` or `source ~/.zshrc` according to your shell types.
 
 ```
 alias svba='source venv/bin/activate'
