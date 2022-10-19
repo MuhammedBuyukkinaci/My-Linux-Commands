@@ -139,12 +139,33 @@ sudo clamscan -r --move=/home/muhammed/Desktop/temp /
 
 ![Find a string](img/01_find_a_string.png)
 
-16) scp (secure copy) is a command to transfer files from remote to local or vice versa.
+19) scp (secure copy) is a command to transfer files from remote to local or vice versa.
 
-17) To change editor to Nano or Vim
+20) To change editor to Nano or Vim
 
 ```
 export EDITOR=/usr/bin/vim.tiny
+```
+
+21) Some shortcuts for terminal. Add it to **~/.bashrc** or **~/.zshrc** .
+
+```
+alias svba='source venv/bin/activate'
+alias jl='jupyter lab'
+alias cdp='cd /home/muhammed/Documents'
+alias gcb='git checkout -b'
+alias gcm='git checkout master'
+alias gbv='git branch -v'
+alias gbd='git branch -d'
+alias gpl='git pull origin master'
+alias gps='git push'
+alias hist='cat ~/.bash_history | grep'
+alias svbajl='source venv/bin/activate; jupyter lab'
+alias glo='git log --oneline'
+alias gbm='git branch -m'
+alias gsa='git status'
+alias gss='git status -s'
+alias grv='git remote -v'
 ```
 
 ## Crontab
