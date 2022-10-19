@@ -152,7 +152,7 @@ export EDITOR=/usr/bin/vim.tiny
 ```
 alias svba='source venv/bin/activate'
 alias jl='jupyter lab'
-alias cdp='cd /home/muhammed/Documents'
+alias cdp='cd ~/Documents'
 alias gcb='git checkout -b'
 alias gcm='git checkout master'
 alias gbv='git branch -v'
@@ -167,6 +167,15 @@ alias gsa='git status'
 alias gss='git status -s'
 alias grv='git remote -v'
 alias ll='ls -altr'
+alias linuxr='cd ~/Documents/My-Linux-Commands'
+alias dockerr='cd ~/Documents/My-Docker-Notes'
+alias djangor='cd ~/Documents/My-Django-Tutorials'
+alias gitr='cd ~/Documents/My-Git-Notes'
+alias helperr='cd ~/Documents/My-Helper-Functions'
+alias generalr='cd ~/Documents/General-IT-Notes'
+alias airflowr='cd ~/Documents/My-AirFlow-Notes'
+alias mlopsr='cd ~/Documents/My-MLOps-Notes'
+
 ```
 
 ## Crontab
