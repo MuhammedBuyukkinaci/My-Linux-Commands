@@ -254,7 +254,7 @@ crontab -r
 
 ## Python Environments - Virtualenv
 
-1) Python environments are used to isolate installed packages from each other.
+1) Python environments are used to isolate installed packages from each other. We should always use it(venv or virtualenv). If we don't use it, it will install python packages on our GLOBAL scope & pollute our os environment. Any unexpected bug will lead OS to crash.
 
 2) To install virtualenv, create an example virtualenv, activate a virtualenv, install libraries from a requirements.txt file; run the following
 
@@ -308,7 +308,19 @@ pip freeze --local > requirements.txt
 
 # To install an environment from packages of global python environment
 python3 -m venv venv --system-site-packages
- ```
+```
+
+3) In an envronment, VIRTUAL_ENV environment variable is set to the directory of virtual environment.
+
+```a.sh
+source venv/bin/activate
+echo $VIRTUAL_ENV
+#/home/muhammed/Documents/My-Helper-Functions/venv
+```
+
+4) venv doesn't ship with Python version. If we created a virtual environment via venv on Python 3.8, we can't use the same venv on Python 3.10. virtualenv is the opposite. We can specify python version on virtualenv.
+
+5) venv is available as of Python 3.3 and not supporting python 2. However, Virtualenv supports python2.
 
  ## Conda
 
@@ -1317,6 +1329,8 @@ ln -s file1 link1
 ln -s /source/directory/here/ /sot(link/directory/here/
 
 ```
+
+9) To list Python packages used by OS, run `dpkg -l | grep python3`
 
 
 
