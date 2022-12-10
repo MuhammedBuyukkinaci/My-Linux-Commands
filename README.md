@@ -141,6 +141,10 @@ sudo clamscan -r --move=/home/muhammed/Desktop/temp /
 
 19) scp (secure copy) is a command to transfer files from remote to local or vice versa.
 
+```scp_usage.sh
+scp -r -i private_key local_file_path remote_user@REMOTE_IP:/path/on/remote
+```
+
 20) To change editor to Nano or Vim
 
 ```
