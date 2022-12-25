@@ -153,7 +153,7 @@ export EDITOR=/usr/bin/vim.tiny
 
 21) Some shortcuts for terminal. Add it to **~/.bashrc** or **~/.zshrc** . After appending these commands, run `source ~/.bashrc` or `source ~/.zshrc` according to your shell types.
 
-```
+```run.sh
 alias svba='source venv/bin/activate'
 alias jl='jupyter lab'
 alias cdp='cd ~/Documents'
@@ -179,7 +179,9 @@ alias helperr='cd ~/Documents/My-Helper-Functions'
 alias generalr='cd ~/Documents/General-IT-Notes'
 alias airflowr='cd ~/Documents/My-AirFlow-Notes'
 alias mlopsr='cd ~/Documents/My-MLOps-Notes'
-
+alias ..='cd ../'
+alias ....='cd ../../'
+alias ......='cd ../../../'
 ```
 
 ## Crontab
