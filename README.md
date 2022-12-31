@@ -1338,7 +1338,7 @@ ln -s /source/directory/here/ /sot(link/directory/here/
 
 9) To list Python packages used by OS, run `dpkg -l | grep python3`
 
-
+10) To get latest word of a unix command in the current terminal, use `!$`. Firstly, run `ls -altr` and secondly run `!$` to get `-altr`.
 
 
 
