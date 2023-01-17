@@ -1340,5 +1340,12 @@ ln -s /source/directory/here/ /sot(link/directory/here/
 
 10) To get latest word of a unix command in the current terminal, use `!$`. Firstly, run `ls -altr` and secondly run `!$` to get `-altr`.
 
+11) To remove multiple files in a short way, use curly brackets in rm command.
+
+```run.sh
+# remove multiple files, removing file1.py, file2.py, file3.py, file4.py
+rm file{1,2,3,4}.py
+```
+
 
 
