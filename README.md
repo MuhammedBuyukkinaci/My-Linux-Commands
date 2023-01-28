@@ -1338,7 +1338,7 @@ ln -s /source/directory/here/ /sot(link/directory/here/
 
 9) To list Python packages used by OS, run `dpkg -l | grep python3`
 
-10) To get latest word of a unix command in the current terminal, use `!$`. Firstly, run `ls -altr` and secondly run `!$` to get `-altr`.
+10) To get latest word of a unix command in the current terminal, use `!$`. Firstly, run `ls -altr` and secondly run `!$` to get `-altr`. `!!`(Bang bang) is used to grab whole last command. `!!` can be used via `git commit -am "!!"` to pass latest command as git commit message.
 
 11) To remove multiple files in a short way, use curly brackets in rm command.
 
@@ -1346,6 +1346,8 @@ ln -s /source/directory/here/ /sot(link/directory/here/
 # remove multiple files, removing file1.py, file2.py, file3.py, file4.py
 rm file{1,2,3,4}.py
 ```
+12) Ctrl + R used for reverse search in history. Press more than once to go backward.
 
+13) `fc` is a linux command meaning fix command. If you write some shellscript code wrong and want to fix it, it enables you to run it in default editor(vim, nano, emacs etc). It is useful in long commands with many arguments especially.
 
-
+ 
