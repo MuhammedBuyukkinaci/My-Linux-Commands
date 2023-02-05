@@ -745,7 +745,7 @@ tar -xvf tarred_file.tar --one-top-level=/home/serhat/Desktop/serhat
 
 23) To glance a file in Terminal. more: to look line by line, head: first 8 lines, tail: last 8 lines, cat: to see all lines, tac: to see all lines in reverse order
 
-```
+```t.sh
 more file_name
 
 head file_name
@@ -755,6 +755,10 @@ tail file_name
 cat file_name
 
 tac file_name
+
+# To see last 5 lines of all fils starting with logg and enting with .py.
+# 5 can be modified to 10 or 999 or another values
+tail -n5 logg*.py
 ```
 
 24) Driver and bootloader issues may cause UI not to work.
@@ -1318,7 +1322,7 @@ ifconfig -a
 
 7) `id` is a command to show info about user. The below code shows details about user muhammed and group muhammed.
 
-```
+```id.sh
 id muhammed
 ```
 
