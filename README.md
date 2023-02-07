@@ -1354,4 +1354,9 @@ rm file{1,2,3,4}.py
 
 13) `fc` is a linux command meaning fix command. If you write some shellscript code wrong and want to fix it, it enables you to run it in default editor(vim, nano, emacs etc). It is useful in long commands with many arguments especially.
 
- 
+14) To see folder structure with a level
+
+```tree.sh
+# To see folders and files up to 3 more levels
+tree -L 3 folder_name
+```
