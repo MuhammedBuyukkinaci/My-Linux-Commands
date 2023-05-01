@@ -1362,3 +1362,6 @@ tree -L 3 folder_name
 ```
 
 15) In order to delete a file in a safer way, run first `shred file_name` and then remove it via `rm -rf file_name`. `shred` command creates a binary file which is harder to recover.
+
+16) `jq` is a command line JSON processor. It works on Linux Terminal. We can cat a file and use jq to get relevant information from it.
+
