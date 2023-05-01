@@ -1134,6 +1134,8 @@ service network-manager restart
 
 18) If we want to create a new service from scratch wiyh our user, we should put it under /etc/systemd/user directory. However, system services are under /etc/systemd/system directory.
 
+19) A service works until we stop it or an error emerges. It can work in a container. A container created from nginx image works until we stop it explicitly or an error emerges.
+
 ## Shell Scripting
 
 1) Bash is the most used shel version.
