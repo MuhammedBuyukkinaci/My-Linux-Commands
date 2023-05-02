@@ -1367,3 +1367,17 @@ tree -L 3 folder_name
 
 16) `jq` is a command line JSON processor. It works on Linux Terminal. We can cat a file and use jq to get relevant information from it.
 
+17) `watch -n 2 MAIN_COMMAND_HERE` is a way to keep track of **MAIN_COMMAND_HERE**. An example is `watch -n 2 ps -ef`.
+
+18) nslookup queries domain name server. It returns resuls from IP to domain name or from domain name to IP.
+
+```shellscript
+nslookup muhammedbuyukkinaci.com
+# Server:		127.0.0.53
+# Address:	127.0.0.53#53
+
+# Non-authoritative answer:
+# Name:	muhammedbuyukkinaci.com
+# Address: 165.22.24.206
+
+```
