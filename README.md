@@ -98,8 +98,11 @@ echo $NAME_OF_EV
 echo $PATH
 echo $HOSTNAME
 
-#To create a specific EV
+# To create a specific EV
 export EV_NAME="EV_VALUE"
+
+# To assign the content of a file to a variable on shell
+TOKEN=$(cat path/to/file)
 
 ```
 
