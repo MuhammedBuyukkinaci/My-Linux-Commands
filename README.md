@@ -267,7 +267,7 @@ crontab -r
 
 2) To install virtualenv, create an example virtualenv, activate a virtualenv, install libraries from a requirements.txt file; run the following
 
- ```
+```shell
 # to install virtualenv
 sudo pip3 install virtualenv
 
@@ -288,6 +288,12 @@ pip freeze > requirements.txt
 
 # To deactivate an activated environment
 deactivate
+
+# In order not to use cache. Might be necessary when RAM is insufficient.
+pip install -r requirements.txt --no-cache-dir
+# To install a standalone library
+pip install NEW_PACKAGE_TO_INSTALL --no-cache-dir
+
 
  ```
 
