@@ -39,8 +39,14 @@ export PATH=$PATH:/usr/projects/mywebsite
 
 6) Number of files & directories in a folder
 
-```
+```shell
 ls -altr | wc -l
+
+# Number of words in a file
+cat file_name.txt | wc -w
+
+# Number of characters in a file
+cat file_name.txt | wc -c
 ```
 
 7) Unzip all files in a folder
@@ -1390,3 +1396,10 @@ nslookup muhammedbuyukkinaci.com
 # Address: 165.22.24.206
 
 ```
+
+19) `shuf` command is used to shuffle a file and exports the shuffled subset to another file.
+
+```shell
+shuf -n  1000 README.md > temp_readme.md
+```
+
