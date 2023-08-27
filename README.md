@@ -1403,7 +1403,7 @@ nslookup muhammedbuyukkinaci.com
 shuf -n  1000 README.md > temp_readme.md
 ```
 
-20) Shell variables and environment variables are different. Shell variables are temporary and environment variables are persistent. When we defined a shell variable via running `X=1` on terminal, it will disappear after closing terminal window. It will be printed out on current session but not in the next terminal session. X will not be an environment variable. If we run a python module having `import os; 'X' in os.environ`, it will return False. 
+20) Shell variables and environment variables are different. Shell variables are temporary and environment variables are persistent. When we define a shell variable via running `X=1` on terminal, it will disappear after closing terminal window. It will be printed out on current session but not in the next terminal session. X will not be an environment variable. If we run a python module having `import os; 'X' in os.environ`, it will return False. 
 
 ```bash
 
