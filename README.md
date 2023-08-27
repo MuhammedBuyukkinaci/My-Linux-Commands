@@ -1403,3 +1403,46 @@ nslookup muhammedbuyukkinaci.com
 shuf -n  1000 README.md > temp_readme.md
 ```
 
+20) Shell variables and environment variables are different. Shell variables are temporary and environment variables are persistent. When we defined a shell variable via running `X=1` on terminal, it will disappear after closing terminal window. It will be printed out on current session but not in the next terminal session. X will not be an environment variable. If we run a python module having `import os; 'X' in os.environ`, it will return False. 
+
+```bash
+
+X=1
+
+echo "$X"
+# 1
+
+# Run a new process on zsh, not printing
+zsh -c 'echo $X'
+
+# Export it
+export X
+
+# Run a new process on zsh, it prints.
+zsh -c 'echo $X'
+# 1
+
+# To reove a variable from being an environment variable
+export -n X
+
+# To delete both EV and Shell variable
+unset X
+
+```
+
+
+```python
+# Run X=1 python example.py returns existent
+# Run X=1 Y=2 Z=3 python example.py returns existent
+# python example.py returns non existent
+
+import os
+
+if 'X' in os.environ:
+    print("existent")
+else:
+    print("non existent")
+```
+
+
+
