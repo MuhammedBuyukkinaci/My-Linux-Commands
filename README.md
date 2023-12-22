@@ -1444,5 +1444,17 @@ else:
     print("non existent")
 ```
 
+21) To see running processes and threads
+
+```shell
+# Processes
+ps aux
+# Number of processes
+ps aux | wc -l
+# Threads
+ps -eLf
+# Number of threads. LWP represents thread id and PPID represents parent process id.
+ps -eLf | wc -l
+```
 
 
