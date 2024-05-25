@@ -1457,4 +1457,9 @@ ps -eLf
 ps -eLf | wc -l
 ```
 
+22) [OBS Studio](https://obsproject.com/) is a software that enables to broadcast freely. Available on mac, windows and linux.
+
+
+
+
 
