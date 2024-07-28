@@ -191,6 +191,11 @@ alias mlopsr='cd ~/Documents/My-MLOps-Notes'
 alias ..='cd ../'
 alias ....='cd ../../'
 alias ......='cd ../../../'
+alias freezenv='pip freeze >'
+alias purgenv='deactivate;rm -rf venv/;'
+alias setpy311='python3.11 -m venv venv; source venv/bin/activate; pip install --upgrade pip'
+alias setpy310='python3.10 -m venv venv; source venv/bin/activate; pip install --upgrade pip'
+
 ```
 
 ## Crontab
