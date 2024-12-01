@@ -125,6 +125,10 @@ sed 's/unix/linux/g' geekfile.txt
 grep -rl "URL" ./main
 # show line numbers of venv in .gitignore file
 grep -n venv .gitignore
+# To search something on a file
+grep WORD_TO_SEARCH FILE_NAME
+# To have before(B) and after(A) lines after finding the pattern
+grep -A 10 -B 5 WORD_TO_SEARCH FILE_NAME
 ```
 
 16) To check the status of NVME SSD
